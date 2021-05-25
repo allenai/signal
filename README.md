@@ -7,6 +7,6 @@ package main
 
 func main() {
 	ctx := signal.WithSignal(ctx)
-	<-ctx.Done()
+	<-ctx.Done() // Blocks until Ctrl+C
 }
 ```
